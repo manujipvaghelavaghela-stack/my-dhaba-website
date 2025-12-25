@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="gu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Famous Dhaba | Online Order</title>
+<style>
+body{margin:0;font-family:Arial;background:#fff7f2}
+header{background:#c62828;color:#fff;padding:16px;text-align:center}
+.wrap{max-width:1200px;margin:auto;padding:14px}
+h2{color:#c62828;margin-top:30px}
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:#fff;border-radius:14px;box-shadow:0 6px 14px rgba(0,0,0,.1);overflow:hidden}
+.img{height:140px;background:#eee center/cover}
+.p{padding:12px}
+.price{font-weight:bold}
+.btn{border:none;border-radius:10px;padding:10px 14px;cursor:pointer}
+.order{background:#2e7d32;color:#fff}
+footer{text-align:center;background:#eee;padding:14px;margin-top:30px}
+</style>
+</head>
+<body>
+<header>
+<h1>New Famous Dhaba</h1>
+<p>Gujarati Menu • Delivery / Pickup • WhatsApp Order</p>
+</header>
+<div class="wrap"><h2>વેજ</h2>
+<div class="menu">
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?dal,fry')"></div><div class="p"><b>દાલ ફ્રાય</b><div class="price">₹60</div><button class="btn order" onclick="order('દાલ ફ્રાય')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?dal,tadka')"></div><div class="p"><b>દાલ તડકા</b><div class="price">₹70</div><button class="btn order" onclick="order('દાલ તડકા')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?chana,masala')"></div><div class="p"><b>ચણા મસાલા</b><div class="price">₹70</div><button class="btn order" onclick="order('ચણા મસાલા')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?mixed,veg,curry')"></div><div class="p"><b>મિક્સ વેજ</b><div class="price">₹70</div><button class="btn order" onclick="order('મિક્સ વેજ')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?sev,tomato')"></div><div class="p"><b>સેવ ટામેટા</b><div class="price">₹70</div><button class="btn order" onclick="order('સેવ ટામેટા')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?sev,masala')"></div><div class="p"><b>સેવ મસાલા</b><div class="price">₹70</div><button class="btn order" onclick="order('સેવ મસાલા')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?raita')"></div><div class="p"><b>દહીં રાયતા</b><div class="price">₹70</div><button class="btn order" onclick="order('દહીં રાયતા')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?veg,kolhapuri')"></div><div class="p"><b>વેજ કોલ્હાપુરી</b><div class="price">₹100</div><button class="btn order" onclick="order('વેજ કોલ્હાપુરી')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?veg,makhani')"></div><div class="p"><b>વેજ મખનવાલા</b><div class="price">₹110</div><button class="btn order" onclick="order('વેજ મખનવાલા')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?aloo,matar')"></div><div class="p"><b>આલુ મટર</b><div class="price">₹70</div><button class="btn order" onclick="order('આલુ મટર')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?palak,veg')"></div><div class="p"><b>પ્લેન પાલક</b><div class="price">₹70</div><button class="btn order" onclick="order('પ્લેન પાલક')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?aloo,palak')"></div><div class="p"><b>આલુ પાલક</b><div class="price">₹70</div><button class="btn order" onclick="order('આલુ પાલક')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?palak,matar')"></div><div class="p"><b>પાલક મટર</b><div class="price">₹70</div><button class="btn order" onclick="order('પાલક મટર')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?bhindi,masala')"></div><div class="p"><b>ભીંડી મસાલા</b><div class="price">₹70</div><button class="btn order" onclick="order('ભીંડી મસાલા')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?bhindi,fry')"></div><div class="p"><b>ભીંડી ફ્રાય</b><div class="price">₹80</div><button class="btn order" onclick="order('ભીંડી ફ્રાય')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?veg,keema')"></div><div class="p"><b>વેજ કીમા</b><div class="price">₹80</div><button class="btn order" onclick="order('વેજ કીમા')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?cashew,curry')"></div><div class="p"><b>કાજુ કરી</b><div class="price">₹140</div><button class="btn order" onclick="order('કાજુ કરી')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?veg,tukani')"></div><div class="p"><b>વેજ તુકાની</b><div class="price">₹150</div><button class="btn order" onclick="order('વેજ તુકાની')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?veg,kadai')"></div><div class="p"><b>વેજ કઢાઈ</b><div class="price">₹150</div><button class="btn order" onclick="order('વેજ કઢાઈ')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?veg,tawa')"></div><div class="p"><b>વેજ તવા</b><div class="price">₹150</div><button class="btn order" onclick="order('વેજ તવા')">Order</button></div></div>
+</div><h2>પનીર</h2>
+<div class="menu">
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?paneer,burji')"></div><div class="p"><b>પનીર ભૂર્જી</b><div class="price">₹150</div><button class="btn order" onclick="order('પનીર ભૂર્જી')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?paneer,tikka,masala')"></div><div class="p"><b>પનીર ટિક્કા મસાલા</b><div class="price">₹140</div><button class="btn order" onclick="order('પનીર ટિક્કા મસાલા')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?paneer,masala')"></div><div class="p"><b>પનીર મસાલા</b><div class="price">₹130</div><button class="btn order" onclick="order('પનીર મસાલા')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?paneer,angara')"></div><div class="p"><b>પનીર અંગારા</b><div class="price">₹160</div><button class="btn order" onclick="order('પનીર અંગારા')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?paneer,tukani')"></div><div class="p"><b>પનીર તુકાની</b><div class="price">₹150</div><button class="btn order" onclick="order('પનીર તુકાની')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?paneer,kadai')"></div><div class="p"><b>પનીર કઢાઈ</b><div class="price">₹160</div><button class="btn order" onclick="order('પનીર કઢાઈ')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?paneer,tawa')"></div><div class="p"><b>પનીર તવા</b><div class="price">₹150</div><button class="btn order" onclick="order('પનીર તવા')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?paneer,butter,masala')"></div><div class="p"><b>પનીર બટર મસાલા</b><div class="price">₹140</div><button class="btn order" onclick="order('પનીર બટર મસાલા')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?paneer,cashew')"></div><div class="p"><b>પનીર કાજુ</b><div class="price">₹150</div><button class="btn order" onclick="order('પનીર કાજુ')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?paneer,chatpata')"></div><div class="p"><b>પનીર ચટપટા</b><div class="price">₹150</div><button class="btn order" onclick="order('પનીર ચટપટા')">Order</button></div></div>
+</div><h2>રાઈસ</h2>
+<div class="menu">
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?veg,pulao')"></div><div class="p"><b>વેજ પુલાવ</b><div class="price">₹70</div><button class="btn order" onclick="order('વેજ પુલાવ')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?jeera,rice')"></div><div class="p"><b>જીરા રાઈસ</b><div class="price">₹60</div><button class="btn order" onclick="order('જીરા રાઈસ')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?plain,rice')"></div><div class="p"><b>પ્લેન રાઈસ</b><div class="price">₹40</div><button class="btn order" onclick="order('પ્લેન રાઈસ')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?dal,rice')"></div><div class="p"><b>દાલ ભાત</b><div class="price">₹50</div><button class="btn order" onclick="order('દાલ ભાત')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?masala,rice')"></div><div class="p"><b>મસાલા રાઈસ</b><div class="price">₹60</div><button class="btn order" onclick="order('મસાલા રાઈસ')">Order</button></div></div>
+</div><h2>રોટી / પરોઠા</h2>
+<div class="menu">
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?chapati')"></div><div class="p"><b>પ્લેન ચપાતી</b><div class="price">₹10</div><button class="btn order" onclick="order('પ્લેન ચપાતી')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?butter,chapati')"></div><div class="p"><b>બટર ચપાતી</b><div class="price">₹13</div><button class="btn order" onclick="order('બટર ચપાતી')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?paratha')"></div><div class="p"><b>પ્લેન પરોઠા</b><div class="price">₹20</div><button class="btn order" onclick="order('પ્લેન પરોઠા')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?butter,paratha')"></div><div class="p"><b>બટર પરોઠા</b><div class="price">₹25</div><button class="btn order" onclick="order('બટર પરોઠા')">Order</button></div></div>
+</div><h2>ચા / કોફી / અન્ય</h2>
+<div class="menu">
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?tea,india')"></div><div class="p"><b>ચા</b><div class="price">₹10</div><button class="btn order" onclick="order('ચા')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?coffee,india')"></div><div class="p"><b>કોફી</b><div class="price">₹15</div><button class="btn order" onclick="order('કોફી')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?lassi')"></div><div class="p"><b>છાસ</b><div class="price">₹10</div><button class="btn order" onclick="order('છાસ')">Order</button></div></div>
+<div class="card"><div class="img" style="background-image:url('https://source.unsplash.com/600x400/?buttermilk')"></div><div class="p"><b>છાસ થેલી</b><div class="price">₹20</div><button class="btn order" onclick="order('છાસ થેલી')">Order</button></div></div>
+</div></div>
+<footer>© 2025 New Famous Dhaba • WhatsApp Order: 8401701638</footer>
+<script>
+const phone='918401701638';
+function order(item){
+const msg=encodeURIComponent('Hello New Famous Dhaba, Order: '+item);
+window.open('https://wa.me/'+phone+'?text='+msg,'_blank');
+}
+</script>
+</body>
+</html>
